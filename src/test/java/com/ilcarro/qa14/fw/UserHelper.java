@@ -64,4 +64,6 @@ public class UserHelper extends HelperBase {
         type(By.cssSelector("#email"), user.getEmail());
         type(By.cssSelector("#password"), user.getPassword());
     }
+
+
 }

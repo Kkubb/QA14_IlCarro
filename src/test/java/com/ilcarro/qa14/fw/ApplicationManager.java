@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
-public class ApplicationManager{
+public class ApplicationManager {
 
     EventFiringWebDriver wd;
 
@@ -52,7 +52,7 @@ public class ApplicationManager{
         //System.setProperty("webdriver.chrome.driver","path/chromedriver.exe");
         if (browser.equals(BrowserType.CHROME)) {
             wd = new EventFiringWebDriver(new ChromeDriver());
-        } else if (browser.equals(BrowserType.FIREFOX)){
+        } else if (browser.equals(BrowserType.FIREFOX)) {
             wd = new EventFiringWebDriver(new FirefoxDriver());
         }
         wd.get("https://ilcarro-dev-v1.firebaseapp.com/");

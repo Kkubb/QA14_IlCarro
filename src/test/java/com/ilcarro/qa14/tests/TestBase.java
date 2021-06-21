@@ -1,6 +1,7 @@
 package com.ilcarro.qa14.tests;
 
 import com.ilcarro.qa14.fw.ApplicationManager;
+import com.ilcarro.qa14.fw.HelperBase;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,7 +41,7 @@ public class TestBase {
         }
 
         logger.info("====================================");
-    }
+}
 
     @AfterSuite(enabled = true)
     public void tearDown() {
